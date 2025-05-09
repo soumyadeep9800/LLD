@@ -4,28 +4,28 @@ import java.util.*;
 public class xxx{
     public static int sumAll(List<Integer> nums){
         int sum=0;
-       for(int num:nums){
+        for(int num:nums){
         sum+=num;
-       } 
-       return sum;
+        }
+        return sum;
     }
     public static int sumAllOdd(List<Integer> nums){
-       int sum=0;
-       for(int num:nums){
+        int sum=0;
+        for(int num:nums){
         if(num%2!=0){
             sum+=num;
         }
-       }
-       return sum;
+        }
+        return sum;
     }
     public static int sumAllEven(List<Integer> nums){
-       int sum=0;
-       for(int num:nums){
+        int sum=0;
+        for(int num:nums){
         if(num%2==0){
             sum+=num;
         }
-       }
-       return sum;
+        }
+        return sum;
     }
     public static void main(String[] args) {
         List<Integer> nums=new ArrayList<>();
