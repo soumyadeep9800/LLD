@@ -1,4 +1,4 @@
-//1
+//1    1-5(creational design)
 //The Singleton Design Pattern ensures that only one instance of a class is created
 //throughout the application, and it provides a global access point to that instance.
 
