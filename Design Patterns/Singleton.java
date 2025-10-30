@@ -35,7 +35,21 @@ public class Singleton {
 }
 This is not thread-safe. Two threads can create multiple instances in race conditions.
 
-✅ Thread-Safe Singleton (Double-Checked Locking)
+✅ Thread-Safe Singleton //poor performance because of synchronized
+public class Singleton {
+    private static  Singleton instance;
+
+    private Singleton() {}
+
+    public static synchronized Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+
+✅ Thread-Safe Singleton (Double-Checked Locking) performance better then previous
 public class Singleton {
     private static volatile Singleton instance;
 
