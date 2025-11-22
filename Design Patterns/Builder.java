@@ -4,18 +4,19 @@ complex objects step by step, especially when constructors have too many
 parameters (required + optional). It improves readability, flexibility,
 and helps avoid telescoping constructor problems.
  */
-
 /*
 public class Car {
     private String engine;
     private int wheels;
     private boolean sunroof;
+
     // Private constructor
     private Car(CarBuilder builder) {
         this.engine = builder.engine;
         this.wheels = builder.wheels;
         this.sunroof = builder.sunroof;
     }
+
     // Static nested Builder class
     public static class CarBuilder {
         private String engine;   // required
@@ -36,6 +37,7 @@ public class Car {
             return new Car(this);
         }
     }
+        
     public void showCar() {
         System.out.println("Engine: " + engine + ", Wheels: " + wheels + ", Sunroof: " + sunroof);
     }
