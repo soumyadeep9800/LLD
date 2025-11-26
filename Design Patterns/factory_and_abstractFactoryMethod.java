@@ -23,7 +23,8 @@ Animal dog=dogFactory.getAnimal();
 Abstract Factory->
 
 Abstract Factory is a creational design pattern that provides an interface for
-creating families of related or dependent objects without specifying their concrete classes
+creating families of related or dependent objects without specifying their concrete classes.
+Abstract Factory lets you create families of related objects without specifying their exact concrete classes.
 
 interface GUIFactory {
     Button createButton();
