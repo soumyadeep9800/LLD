@@ -3,7 +3,6 @@ Strategy Design Pattern is a behavioral design pattern that defines a family of 
 encapsulates each one, and makes them interchangeable. The strategy lets the algorithm vary independently
 from the clients that use it.
 
-
 public interface SortStrategy {
     void sort(int[] arr);
 }
